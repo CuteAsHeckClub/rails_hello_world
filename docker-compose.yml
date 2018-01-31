@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:alpine
+  web:
+    env_file:
+    - .env
+    build: .
+    command: "./wait-for-postgres.sh db bundle exec db:create && bundle exec rails s -p 3000"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db

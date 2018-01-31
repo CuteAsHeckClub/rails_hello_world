@@ -86,6 +86,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    newrelic_rpm (4.7.1.340)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -158,6 +159,8 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2018.3)
+      tzinfo (>= 1.0.0)
     uglifier (4.1.5)
       execjs (>= 0.3.0, < 3)
     web-console (3.5.1)
@@ -180,9 +183,11 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  newrelic_rpm (~> 4.7)
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.4)
+  rake
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
